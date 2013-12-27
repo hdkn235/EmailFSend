@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <appSettings>
+    <add key="format" value="@qq.com,@163.com,@QQ.com,@126.com" />
+    <add key="cbEnable" value="True" />
+    <add key="delay" value="3" />
+    <add key="nextPageKey" value="下页" />
+  </appSettings>
+</configuration>
