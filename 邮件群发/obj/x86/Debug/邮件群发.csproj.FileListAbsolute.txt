@@ -24,3 +24,15 @@ E:\Projects\邮件群发\邮件群发\obj\x86\Debug\GenerateResource.read.1.tlog
 E:\Projects\邮件群发\邮件群发\obj\x86\Debug\GenerateResource.write.1.tlog
 E:\Projects\邮件群发\邮件群发\obj\x86\Debug\邮件群发.exe
 E:\Projects\邮件群发\邮件群发\obj\x86\Debug\邮件群发.pdb
+E:\Projects\EmailFSend\邮件群发\bin\Debug\邮件群发.exe.config
+E:\Projects\EmailFSend\邮件群发\obj\x86\Debug\邮件群发.exe
+E:\Projects\EmailFSend\邮件群发\obj\x86\Debug\邮件群发.pdb
+E:\Projects\EmailFSend\邮件群发\bin\Debug\邮件群发.exe
+E:\Projects\EmailFSend\邮件群发\bin\Debug\邮件群发.pdb
+E:\Projects\EmailFSend\邮件群发\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Projects\EmailFSend\邮件群发\obj\x86\Debug\邮件群发.FrmPickEmail.resources
+E:\Projects\EmailFSend\邮件群发\obj\x86\Debug\邮件群发.FrmAddContact.resources
+E:\Projects\EmailFSend\邮件群发\obj\x86\Debug\邮件群发.FrmMain.resources
+E:\Projects\EmailFSend\邮件群发\obj\x86\Debug\邮件群发.Properties.Resources.resources
+E:\Projects\EmailFSend\邮件群发\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\Projects\EmailFSend\邮件群发\obj\x86\Debug\GenerateResource.write.1.tlog

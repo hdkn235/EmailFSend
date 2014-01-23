@@ -248,21 +248,22 @@ namespace 邮件群发
                 SmtpClient client = new SmtpClient(sp.UServiceFullName);//默认端口为25
                 //client.DeliveryMethod = SmtpDeliveryMethod.Network;
                 //client.EnableSsl = true;
+                //client.UseDefaultCredentials = true;
                 client.Credentials = new NetworkCredential(sp.UAccount, sp.UPwd);//获取或者设置用户验证发件人的凭据    用户名和密码初始化
                 try
                 {
                     client.Send(mail);
                     temp++;
                 }
-                catch
+                catch (Exception ex)
                 {
                     continue;
                 }
-                SetCount(contacts.Length, temp);
+                SetCount(contacts.Length, temp, true);
                 Thread.Sleep(delay);
             }
+            SetCount(contacts.Length, temp, false);
             MessageBox.Show("发送完毕！");
-
         }
 
         /// <summary>
@@ -270,17 +271,20 @@ namespace 邮件群发
         /// </summary>
         /// <param name="total">总数</param>
         /// <param name="index">第几封</param>
-        private void SetCount(int total, int index)
+        private void SetCount(int total, int index, bool isPb)
         {
             if (txtCount.InvokeRequired)
             {
-                Action<int, int> a = SetCount;
-                this.Invoke(a, total, index);
+                Action<int, int, bool> a = SetCount;
+                this.Invoke(a, total, index, isPb);
             }
             else
             {
                 txtCount.Text = string.Format("总共{0}封，已发送{1}封", total, index);
-                progressBar1.Value += 1;
+                if (isPb)
+                {
+                    progressBar1.Value += 1;
+                }
             }
         }
 

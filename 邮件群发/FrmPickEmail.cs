@@ -158,7 +158,10 @@ namespace 邮件群发
             {
                 if (m.Success)
                 {
-                    sb.Append(m.Value + "\r\n");
+                    if (!sb.ToString().Contains(m.Value))
+                    {
+                        sb.Append(m.Value + "\r\n");
+                    }
                 }
             }
             return sb.ToString();
